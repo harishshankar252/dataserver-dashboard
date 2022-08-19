@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Data Server Dashboard" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Data Server Dashboard"/> <!-- title shown in the actual shared post -->
+	<meta property="og:image" content="images/shotchart.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="index.html" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Data Server Dashboard</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+	<!-- eguage image  -->
+    <link rel="icon" href="images/eguage.png">
+</head>
+
+
+
+<body data-spy="scroll" data-target=".fixed-top">
+        <!-- Header -->
+        <div id= "header" class="header">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="assets/DS.mp4" type="video/mp4">
+            </video> <!-- end of video -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1>Data Server Dashboard</h1>
+                        <p-large></p>
+    
+                    </div> <!-- end of w-100 -->
+                </div> <!-- end of d-flex -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header -->
+        <!-- end of header -->
+    
+            <!-- Intro -->
+            <div class="form-wrap">
+                <style>
+                    
+                </style>
+                <style>
+                    *{
+        margin:0px;
+        padding:0px;
+    }
+    .form-wrap{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width:600px;
+        height:500px;
+        /* background: red; */
+        /* border: 1px solid #000; */
+    }
+    .btn-block{
+        background: rgb(221, 216, 216);
+        color: #000;
+        padding:8px 5px;
+        font-size: 20px;
+        border: none;
+    }
+    .btn-block:focus{
+        outline: none;
+    }
+    /* .btn-block:hover{
+        opacity: 0.5;
+        background-color: aqua;
+    } */
+    .active{
+        background: chocolate;
+        color: cornsilk;
+    }
+    .bt-login{
+        background:chocolate;
+        color:#fff;
+    }
+    .display-none{
+        display: none;
+    }
+    
+    
+                </style>
+                <div class="container shadow">
+                  <div class="row">
+                    <div class="col-md-6 p-0 m-0">
+                      <button class="btn-block active" id="btn-1">Sign in</button>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                      <button class="btn-block" id="btn-2">Sign up</button>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center" id="signin">
+                    <div class="col-md-12">
+                      <form action="" class="form p-5">
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-1">
+                            <input type="checkbox" name="remember" id="remember" />
+                          </div>
+                          <div class="col-11">
+                            <label for="password">Remember me</label>
+                          </div>
+                        </div>
+                        <input
+                          type="submit"
+                          value="Sign in"
+                          class="btn-block rounded mt-5 bt-login"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                  <div
+                    class="row justify-content-center align-items-center display-none"
+                    id="signup"
+                  >
+                    <div class="col-md-12">
+                      <form name="signup" id="signup" class="form p-5">
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <label for="username">Firstname*</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                          <div class="col-6">
+                            <label for="username">Lastname*</label>
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-md-3">
+                            <label for="password">Email*</label>
+                          </div>
+                          <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-md-3">
+                            <label for="password">Password*</label>
+                          </div>
+                          <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-1">
+                            <input type="checkbox" name="remember" id="remember" />
+                          </div>
+                          <div class="col-11">
+                            <label for="password">Remember me</label>
+                          </div>
+                        </div>
+                        <input onclick="submitForm()"
+                          type="submit"
+                          value="Submit"
+                          class="btn-block rounded mt-5 bt-login"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- <script src="js/jquery.js"></script> -->
+              <script>
+                $(document).ready(function () {
+                  $("#btn-2").click(function () {
+                    $("#btn-2").addClass("active");
+                    $("#btn-1").removeClass("active");
+                    $("#signin").toggleClass("display-none");
+                    $("#signup").removeClass("display-none");
+                  });
+                  $("#btn-1").click(function () {
+                    $("#btn-1").addClass("active");
+                    $("#btn-2").removeClass("active");
+                    $("#signin").removeClass("display-none");
+                    $("#signup").addClass("display-none");
+                  });
+                });
+              </script>
+    <script>
+        function submitForm(){
+            let form = document.getElementById("signup");
+           const url = 'localhost:3000/api/register';
+           const data = {
+            "fname":"manoj",
+            "lname":"boddu",
+            "email":"abcd@gmail.com",
+            "password":"password",
+            "phonenumber":"1213144141",
+           }
+           $('.bt-login').click(function(){
+            $.post(url, data, function(data, status){
+                console.log(`${data} and status is ${status}`)
+            });
+           })
+        }
+    </script>
+
+
+            </body>
+                                
+                                </body>
+                                
+    
+    
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of basic-1 -->
+            <!-- end of intro -->
+        
+        
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
+    </html>
+    

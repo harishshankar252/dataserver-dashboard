@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Data Server Dashboard" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Data Server Dashboard"/> <!-- title shown in the actual shared post -->
+	<meta property="og:image" content="images/shotchart.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="index.html" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Data Server Dashboard</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- eguage image  -->
+    <link rel="icon" href="images/eguage.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text page-scroll" href="index.html">
+            Data Server Dashboard
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#dashboard">DASHBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#credits">CREDITS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="sign.html">LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <div id= "header" class="header">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/DS.mp4" type="video/mp4">
+        </video> <!-- end of video -->
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1>Data Server Dashboard</h1>
+                    <p-large></p>
+                    <div class="button-container">
+                        <a class="btn-solid-reg page-scroll" href="#intro">EXPLORE</a>
+                    </div> <!-- end of button-container -->
+                </div> <!-- end of w-100 -->
+            </div> <!-- end of d-flex -->
+        </div> <!-- end of container -->
+    </div> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">INTRO</div>
+                    <h2>Objective of the project</h2>
+                    <p-large>In this project we triggered data uisng API's for every minute/second/hour/week from Environmental Sensors placed in 8 houses and visualized the data using Tableau and Power BI</p-large>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+
+    <!-- Intro details -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-bullseye fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Target audience</h4>
+                            <p>Specially Developed this dashboard for people. For all the people who works on Sensors, this will be an example to show your data interacively.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-rocket fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Significance of the work</h4>
+                            <p>To be added</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-database fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Dataset</h4>
+                            <p>The dataset is our own. We extract data from the sensors at different time intervals and store them in a MySQL database. This data is inputed into the visualization tools, from which a live dashboard is made.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of intro details -->
+
+
+    <!-- Dashboard Shot Chart-->
+    <div id="dashboard" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">DASHBOARD</div>
+                    <h2>Data Server Dashboard</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class='tableauPlaceholder' id='viz1593604226773' style='position: relative; border: solid #13BF98;'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nb&#47;nba_shots_2000_2020&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                            <param name='embed_code_version' value='3' /> 
+                            <param name='site_root' value='' />
+                            <param name='name' value='nba_shots_2000_2020&#47;Dashboard1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='no' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nb&#47;nba_shots_2000_2020&#47;Dashboard1&#47;1.png' /> 
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='no' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                    </div>                
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1593604226773');
+                        var vizElement = divElement.getElementsByTagName('object')[0]; 
+                        vizElement.style.width='100%';vizElement.style.height='827px';
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = '';                    
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of dashboard -->
+
+
+
+    <!-- Credits -->
+    <div id="credits" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">CREDITS</div>
+                    <h2>Our Team</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="card">
+                            <img class="card-image" src="" alt="alternative">
+                            <div class="card-body">
+                                <div class="testimonial-text">To be added</div>
+                            </div>
+                            <p class="job-title">test user 1</p>
+                        </div>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-linkedin fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="card">
+                            <img class="card-image" src="" alt="alternative">
+                            <div class="card-body">
+                                <div class="testimonial-text"></div>
+                            </div>
+                            <p class="job-title">Test user 1</p>
+                        </div>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-linkedin fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="card">
+                            <img class="card-image" src="" alt="alternative">
+                            <div class="card-body">
+                                <div class="testimonial-text">To be added</div>
+                            </div>
+                            <p class="job-title">User</p>
+                        </div>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-linkedin fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of credits -->
+
+
+    <!-- Footer -->
+    
+    <!-- end of footer -->
+
+
+  
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
